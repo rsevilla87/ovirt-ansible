@@ -1,7 +1,7 @@
 ---
 - name: Download the qcow image
   get_url:
-    url: "{{ qcow_url }}"
+    url: "{{ qcow2_url }}"
     dest: "{{ image_path }}"
   register: downloaded
   tags:

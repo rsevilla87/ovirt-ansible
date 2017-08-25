@@ -16,7 +16,7 @@ Role Variables
 
 | Name               | Default value         |                            |
 |--------------------|-----------------------|----------------------------|
-| qcow_url           | UNDEF                 | The URL of the QCOW2 image. |
+| qcow2_url           | UNDEF                 | The URL of the QCOW2 image. |
 | image_path         | /tmp/ovirt_image_data | Path where the QCOW2 image will be downloaded to. |
 | template_cluster   | Default               | Name of the cluster where template must be created. |
 | template_name      | mytemplate            | Name of the template. |
@@ -52,7 +52,7 @@ Example Playbook
     engine_password: 123456
     engine_cafile: /etc/pki/ovirt-engine/ca.pem
 
-    qcow_url: https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud.qcow2
+    qcow2_url: https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud.qcow2
     template_cluster: production
     template_name: centos7_template
     template_memory: 4GiB
